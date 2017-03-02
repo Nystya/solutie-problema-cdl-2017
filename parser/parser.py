@@ -82,7 +82,7 @@ class LogParser:
 
     def print_stats(self):
         for endpoint, stat in self.processed:
-            print(stat.timestamp.strftime(OUTPUT_TIMESTAMP_FORMAT),
-                  self.interval,
-                  endpoint,
-                  round(100.0 * stat.good / stat.total, 2))
+            print('%s %d %s %.2f' % (stat.timestamp.strftime(OUTPUT_TIMESTAMP_FORMAT),
+                                     self.interval,
+                                     endpoint,
+                                     round(100.0 * stat.good / stat.total, 2)))
