@@ -226,10 +226,10 @@ if __name__ == '__main__':
         ('tests/test4.log', 10000, 10, 3, 3),
         ('tests/test5.log', 10000, 10, 3, 30),
         ('tests/test6.log', 10000, 10, 3, 300),
-        ('tests/test7.log', 100000, 30, 5, 3),
-        ('tests/test8.log', 100000, 30, 5, 30),
-        ('tests/test9.log', 100000, 30, 5, 300),
-        ('tests/test10.log', 500000, 30, 5, 10),
+        ('tests/test7.log', 70000, 30, 5, 3),
+        ('tests/test8.log', 70000, 30, 5, 30),
+        ('tests/test9.log', 70000, 30, 5, 300),
+        ('tests/test10.log', 400000, 30, 5, 10),
     ]
 
     for i, param in enumerate(params):
