@@ -15,7 +15,7 @@ def print_test_line(test, score, line_width=50):
     print(line)
 
 
-executable_name = 'python3 parser'
+executable_name = './log_stats'
 
 tests = [
     ('tests/test0.log',),
@@ -51,7 +51,7 @@ for test in tests:
                        .replace('log', 'out'))
 
     with open(out_file, 'w') as f:
-        call(['timeout', '30'] + executable_name.split() + list(test),
+        call(['timeout', '30', executable_name] + list(test),
              stdout=f)
 
     ref_file = (test[0].replace('tests', 'reference')
