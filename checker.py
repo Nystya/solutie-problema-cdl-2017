@@ -25,9 +25,9 @@ tests = [
     ('tests/test4.log', '--interval', '2'),
     ('tests/test5.log', '--interval', '5'),
     ('tests/test6.log', '--interval', '60'),
-    ('tests/test7.log', '--interval', '2', '--start', '2017-03-02T17:23'),
+    ('tests/test7.log', '--interval', '2', '--start', '2016-01-18T12:23'),
     ('tests/test8.log', '--interval', '5', '--end', '2016-11-21T04:52'),
-    ('tests/test9.log', '--interval', '60', '--start', '2017-01-24T04:02', '--end', '2017-03-14T14:06'),
+    ('tests/test9.log', '--interval', '60', '--start', '2016-04-11T08:37', '--end', '2017-03-14T14:06'),
     ('tests/test10.log', '--interval', '30', '--success', '20x,3xx,404'),
 ]
 
@@ -51,7 +51,7 @@ for test in tests:
                        .replace('log', 'out'))
 
     with open(out_file, 'w') as f:
-        call(['timeout', '30', executable_name] + list(test),
+        call(['gtimeout', '30', executable_name] + list(test),
              stdout=f)
 
     ref_file = (test[0].replace('tests', 'reference')
