@@ -35,7 +35,7 @@ tests = [
 for directory in ('output', 'diffs'):
     if os.path.exists(directory):
         shutil.rmtree(directory)
-    
+
     os.mkdir(directory)
 
 
@@ -50,8 +50,8 @@ for test in tests:
     out_file = (test[0].replace('tests', 'output')
                        .replace('log', 'out'))
 
-    with open(out_file, 'w') as f: 
-        call(['timeout', '10'] + executable_name.split() + list(test),
+    with open(out_file, 'w') as f:
+        call(['timeout', '30'] + executable_name.split() + list(test),
              stdout=f)
 
     ref_file = (test[0].replace('tests', 'reference')

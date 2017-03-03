@@ -111,11 +111,20 @@ endpoint_prefix = [
     'son',
     'mark',
     'signal',
-    'committee',
-    'voiceless',
-    'purpose',
-    'note',
-    'slim',
+    'first-committee-of-year',
+    '__voiceless__',
+    '-purpose_',
+    'note-book',
+    'slim_',
+    '58b7fa50eb8057c167aae935',
+    '58b7fa50eb8057c167aae93c',
+    '58b7fa50eb8057c167aae942',
+    '58b7fad8eb8057c167ab13f5',
+    '58b7fad8eb8057c167ab1400',
+    '58b7fad8eb8057c167ab13fb',
+    '__2016__'
+    '2016',
+    '-__factory__-'
 ]
 
 system = [
